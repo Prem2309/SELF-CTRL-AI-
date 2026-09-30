@@ -22,7 +22,7 @@ exports.handler = async function(event, context) {
 
   try {
     const data = JSON.parse(event.body || '{}');
-    const apiKey = data.apiKey || process.env.GEMINI_API_KEY || 'AQ.Ab8RN6KyMFTgkChsn3s2We_SPO6_hQUr5neSIqorfj_CU7DX1';
+    const apiKey = data.apiKey || process.env.GEMINI_API_KEY || 'Gemini KEy';
     const model = data.model || process.env.GEMINI_MODEL || 'gemini-3.1-flash-lite';
     const prompt = data.prompt;
 
